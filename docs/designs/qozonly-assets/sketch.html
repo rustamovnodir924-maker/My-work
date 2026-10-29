@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>Qozonly — эскиз «Блюдо на завтра»</title>
+<style>
+body{font-family:system-ui,sans-serif;background:#fff;color:#222;margin:24px;}
+h1{font-size:18px;font-weight:600;margin:0 0 16px}
+.row{display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap}
+.phone{width:340px;border:2px solid #888;border-radius:28px;padding:14px;min-height:620px}
+.cap{font-size:12px;color:#666;margin:6px 0 10px;text-align:center}
+.chat{background:#f4f4f4;border-radius:12px;padding:10px;min-height:560px}
+.msg{background:#fff;border:1px solid #bbb;border-radius:12px;padding:10px;font-size:14px}
+.img{border:1px dashed #999;height:150px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#888;font-size:13px;margin:8px 0}
+.btn{border:1px solid #666;border-radius:8px;padding:8px;text-align:center;margin-top:6px;font-size:14px}
+.btn.main{border-width:2px;font-weight:600}
+.tag{display:inline-block;border:1px solid #aaa;border-radius:10px;padding:1px 7px;font-size:12px;margin-right:4px}
+.step{border:1px solid #bbb;border-radius:10px;padding:10px;margin:8px 0;font-size:14px}
+.prog{display:flex;gap:4px;margin:6px 0 10px}.prog i{flex:1;height:5px;border:1px solid #888;border-radius:3px}.prog i.on{background:#888}
+.note{font-size:12px;color:#555;border-left:3px solid #aaa;padding-left:8px;margin-top:10px}
+small{color:#666}
+</style></head><body>
+<h1>Qozonly — вариант A «Блюдо на завтра» (черновой эскиз)</h1>
+<div class="row">
+
+<!-- Экран 1: сообщение бота в 21:00. Один выбор, а не каталог: новичку нужен ответ, а не 300 рецептов. -->
+<div>
+<div class="cap">1. Сообщение бота, 21:00</div>
+<div class="phone"><div class="chat">
+  <div class="msg">
+    <b>Qozonly</b> <small>21:00</small><br><br>
+    🍲 <b>Завтра попробуй: Димляма</b><br>
+    <span class="tag">Новичок</span><span class="tag">1 ч 30 мин</span><span class="tag">на 6 человек</span>
+    <div class="img">[фото готового блюда в казане]</div>
+    Почти всё режется крупно и тушится само. Сложно ошибиться — хорошее блюдо для 3-го раза.
+    <!-- Главная кнопка: путь к плите. Список для базара — второй по важности. -->
+    <div class="btn main">👩‍🍳 Как готовить (8 шагов)</div>
+    <div class="btn">🛒 Список для базара</div>
+    <div class="btn">🔄 Другое блюдо</div>
+  </div>
+  <div class="note">Одно блюдо, а не меню на неделю. «Другое блюдо» — максимум 2 замены, чтобы не вернуть усталость от выбора.</div>
+</div></div>
+</div>
+
+<!-- Экран 2: пошаговый режим. Один шаг на экран, фото на каждый шаг, крупные кнопки (руки в муке). -->
+<div>
+<div class="cap">2. Пошаговый режим (Mini App)</div>
+<div class="phone">
+  <b>Димляма</b> · шаг 3 из 8
+  <div class="prog"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="img">[фото шага: мясо выложено на дно казана]</div>
+  <div class="step"><b>Выложите мясо на дно казана</b> поверх растопленного курдючного жира. <b>Не мешайте.</b><br><small>800 г баранины · казан 8–10 л</small></div>
+  <!-- Подсказка вместо вопроса свекрови: то, что стыдно спросить. -->
+  <div class="step">💡 <b>Частая ошибка:</b> если налить воду, получится суп. Сок дадут овощи.</div>
+  <div class="btn">⏱ Таймер 10 мин</div>
+  <div class="btn main">Дальше →</div>
+  <div class="note">На последнем шаге: «✅ Я приготовила» + фото результата (это и есть главная метрика) и «Отправить семье».</div>
+</div>
+</div>
+
+</div></body></html>
